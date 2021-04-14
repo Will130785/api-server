@@ -27,6 +27,7 @@ const sendMail = (email, source) => {
         html: `<p><b>Hi Jim</b></p>
                <p>You have recieved a new message from ${email.name}</p>
                <p>Telephone: ${email.contact}</p>
+               <p>${email.email}</p>
                <p>${email.message}</p>
                <p style="color: red;"><b>This email has been sent via the jimothyshondells.com contact form</b></p>` // html body
       })
