@@ -196,4 +196,5 @@ module.exports.formSubmission = async (req, res) => {
   const data = req.body
   console.log(data)
   sendMail(data, 'form')
+  res.send(data)
 }
