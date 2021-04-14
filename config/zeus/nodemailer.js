@@ -20,7 +20,7 @@ const sendMail = (email, source) => {
     // send mail with defined transport object
     if (source === 'form') {
       const info = await transporter.sendMail({
-        from: `${email.email} 👻 <${email.email}>`, // sender address
+        from: `${email.email} <${email.email}>`, // sender address
         to: 'will_constable@msn.com', // list of receivers
         subject: `You have an email from ${email.name}`, // Subject line
         text: `${email.message}`, // plain text body
@@ -39,7 +39,7 @@ const sendMail = (email, source) => {
       // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
     } else if (source === 'register') {
       const info = await transporter.sendMail({
-        from: '"jimothyshondells.com 👻" <shondellsjimothy@gmail.com>', // sender address
+        from: '"jimothyshondells.com" <shondellsjimothy@gmail.com>', // sender address
         to: email, // list of receivers
         subject: 'You have been registered', // Subject line
         text: 'Congruatulatons, you have been registered as a user of the jimothyshondells.com CMS', // plain text body
