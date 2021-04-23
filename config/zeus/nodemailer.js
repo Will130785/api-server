@@ -21,7 +21,7 @@ const sendMail = (email, source) => {
     if (source === 'form') {
       const info = await transporter.sendMail({
         from: `${email.email}`, // sender address
-        to: 'will_constable@msn.com', // list of receivers
+        to: 'jamesbarrett_1@hotmail.co.uk', // list of receivers
         subject: `You have an email from ${email.name}`, // Subject line
         text: `${email.message}`, // plain text body
         html: `<p><b>Hi Jim</b></p>
