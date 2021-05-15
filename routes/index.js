@@ -5,5 +5,6 @@ const router = require('express').Router()
 //   console.log('TEst')
 // })
 router.use('/zeus', require('./zeus'))
+router.use('/enquiry', require('./enquiry'))
 
 module.exports = router
